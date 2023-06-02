@@ -1,0 +1,70 @@
+:root {
+  --text-color: rgb(255, 147, 7);
+}
+
+.container {
+  background-image: url("/home_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.bg-image {
+  background: rgba(9, 30, 62, 0.7);
+  min-height: 100vh;
+}
+
+.main-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title-little {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+
+.main-title-big {
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+}
+
+.main-buttons {
+  text-align: center;
+}
+
+.main-button button {
+  font-size: 18px;
+  margin: 10px;
+  padding: 15px 25px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-left {
+  transition: 0.5s;
+  border: none;
+  background-color: var(--text-color);
+}
+
+.main-button-left:hover {
+  background: #fff;
+  color: var(--text-color);
+}
+
+.button-right {
+  border: 1px solid #fff;
+  background: transparent;
+  transition: 0.5s;
+}
+
+.main-button-right:hover{
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
