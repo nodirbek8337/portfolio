@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dastur interfeysi</title>
-    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/program_interface.css" />
   </head>
   <body>
     <div class="container">
@@ -33,8 +34,12 @@
           <div class="navbar-menu">
             <ul>
               <li><a href="index.html">Bosh sahifa</a></li>
-              <li><a href="about_project.html">Loyiha haqida</a></li>
-              <li class="active"><a href="program_interface.html">Dastur interfeysi</a></li>
+              <li>
+                <a href="about_project.html">Loyiha haqida</a>
+              </li>
+              <li class="active">
+                <a href="program_interface.html">Dastur interfeysi</a>
+              </li>
               <li><a href="prices.html">Narxlar</a></li>
               <li><a href="contact.html">Aloqa</a></li>
               <li><a href="choices.html">Tanlovlar</a></li>
@@ -42,10 +47,63 @@
             </ul>
           </div>
         </section>
-        <section class="main-section">
+        <section class="main-section1">
+          <h3 class="main-title-big">Dasturning ko'rinishi</h3>
+          <div class="main-title-little">
+            <a href="index.html">Bosh sahifa</a>
+            <a href="contact.html"
+              ><div class="main-title-circle"></div>
+              <p>Aloqa</p></a
+            >
+          </div>
         </section>
       </div>
     </div>
+    <section class="main-section2">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="../img/Slider_1_image.png" class="slider-image" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../img/Slider_2_image.png" class="slider-image" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../img/Slider_3_image.png" class="slider-image" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../img/Slider_4_image.png" class="slider-image" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../img/Slider_5_image.png" class="slider-image" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../img/Slider_1_image.png" class="slider-image" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../img/Slider_2_image.png" class="slider-image" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer-distance">
         <div class="footer-distance-bottom"></div>
@@ -223,10 +281,42 @@
         </div>
         <div class="footer-distance-bottom">
           <a href="#">
-            <p class="text">© Cosmos  Team</p>
+            <p class="text">© Cosmos Team</p>
           </a>
         </div>
       </div>
     </footer>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active1";
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,142 @@
+:root {
+  --text-color: rgb(255, 147, 7);
+}
+
+.container {
+  background-image: url("/frontend/img/home_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 45vh;
+}
+
+.bg-image {
+  background: rgba(9, 30, 62, 0.7);
+  min-height: 45vh;
+}
+
+.main-section1 {
+  padding-top: 98px;
+}
+
+.main-title-big {
+  color: #fff;
+  font-size: 56px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.main-title-little {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title-little a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.main-title-little a:hover {
+  color: var(--text-color);
+}
+
+.main-title-circle {
+  transition: 0.5s;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.main-title-little a:hover .main-title-circle {
+  border: 2px solid var(--text-color);
+}
+
+.main-title-little a p {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+.main-section2 {
+  min-height: 100vh;
+  padding: 30px 100px 20px 100px;
+}
+
+.main-top-title{
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.main-top-big-title{
+    color: #091E3E;
+    font-size: 40px; 
+    text-align: center;   
+}
+
+.main-section-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section-line p{
+    width: 150px;
+    padding-top: 10px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.main-items{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.main-item{
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+}
+
+.main-item-icons{
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-color);
+}
+
+.main-item-icons svg{
+    color: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.main-item-info{
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.main-item-info-top-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #091E3E;
+}
+
+.main-item-info-bottom-title{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.map-image{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
