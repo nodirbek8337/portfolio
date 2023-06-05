@@ -1,0 +1,152 @@
+:root {
+  --text-color: rgb(255, 147, 7);
+}
+
+.container {
+  background-image: url("/frontend/img/home_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 45vh;
+}
+
+.bg-image {
+  background: rgba(9, 30, 62, 0.7);
+  min-height: 45vh;
+}
+
+.main-section1 {
+  padding-top: 98px;
+}
+
+.main-title-big {
+  color: #fff;
+  font-size: 56px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.main-title-little {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title-little a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.main-title-little a:hover {
+  color: var(--text-color);
+}
+
+.main-title-circle {
+  transition: 0.5s;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.main-title-little a:hover .main-title-circle {
+  border: 2px solid var(--text-color);
+}
+
+.main-title-little a p {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+.main-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container-login {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.login-title {
+  color: #6b6a75;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.main-container-login label {
+  color: #6b6a75;
+  padding-bottom: 5px;
+}
+
+.main-container-login input {
+  border: 1px solid #c5c5c9;
+  color: #6b6a75;
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.main-container-login input:focus {
+  outline: none;
+}
+
+.login-bottom-title{
+    text-align: center;
+    font-weight: 600;
+    color: rgb(240, 25, 25);
+}
+
+.login-buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn-signup,
+.btn-signin{
+    text-decoration: none;
+}
+
+.btn-signup button{
+    color: var(--text-color);
+    padding-right: 10px;
+    background: transparent;
+    padding: 10px;margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-signin button{
+    background: transparent;
+    padding: 10px;
+    border: 1px solid green;
+    color: green;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-signin button:hover{
+    background-color: green;
+    color: #fff;
+}
